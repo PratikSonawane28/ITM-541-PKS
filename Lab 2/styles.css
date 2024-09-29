@@ -1,23 +1,29 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-
-	nav {
-		display: flex;
-		justify-content: space-around;
-		padding: 10px;
-		border: 2px solid black;
-	}
-	nav button {
-		background-color: red;
-		color: white;
-		border: none;
-		padding: 15px 30px;
-		font-size: 16px;
-		cursor: pointer;
-		border-radius: 5px;
-	}
+    display: flex;
+    justify-content: space-between; 
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+    padding: 3px;
+	padding-right: 40px;
+    padding-left: 40px;
 }
+
+#flex-section1 li {
+    margin: 0 5px; 
+}
+
+#flex-section1 li a {
+    display: block;
+    background-color: rgb(201, 27, 27);
+    color: white;
+    padding: 11px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    }
 
 /* end Flexbox Part 1 */
 
@@ -25,23 +31,35 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: #9a8e8e;
 }
 
 #flex-section2 li {
-
+    flex: 1;
+    padding: 8px;
+    background-color: #e0e0e0;
+    border: 4px solid #595454;
 }
 
 #flex-section2 .item1 {
-
+    order: 1;
 }
 
 #flex-section2 .item2 {
-
+    order: 3;
 }
 
 #flex-section2 .item3 {
-
+    order: 2;
+    
 }
 
 /* end Flexbox Part 2 */
