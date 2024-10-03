@@ -1,29 +1,13 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-    display: flex;
-    justify-content: space-between; 
-    list-style: none; 
-    padding: 0;
-    margin: 0; 
-    padding: 3px;
-	padding-right: 40px;
-    padding-left: 40px;
+	display: flex;
+    justify-content: space-between;
+    padding-inline-start: 50px;
+	padding-inline-end: 50px;
+    margin: 0;
+    list-style-type: none;
 }
-
-#flex-section1 li {
-    margin: 0 5px; 
-}
-
-#flex-section1 li a {
-    display: block;
-    background-color: rgb(201, 27, 27);
-    color: white;
-    padding: 11px 15px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    }
 
 /* end Flexbox Part 1 */
 
@@ -31,7 +15,7 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-    display: flex;
+	display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -43,23 +27,22 @@
 }
 
 #flex-section2 li {
-    flex: 1;
+	flex: 1;
     padding: 8px;
     background-color: #e0e0e0;
     border: 4px solid #595454;
 }
 
 #flex-section2 .item1 {
-    order: 1;
+	order: 1;
 }
 
 #flex-section2 .item2 {
-    order: 3;
+	order: 3;
 }
 
 #flex-section2 .item3 {
-    order: 2;
-    
+	order: 2;
 }
 
 /* end Flexbox Part 2 */
@@ -68,11 +51,21 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* To aligns the card and tags vertically */
+    text-align: center;
 }
 
 #flex-section3 .tags ul {
-
+	display: flex;
+    flex-wrap: wrap; /* To allows tags to wrap onto the next line */
+    gap: 0px; /* To Add space between tags */
+    list-style: none; /* To Remove bullet points */
+    padding: 0;
+    margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /* end Flexbox Part 3 */
@@ -81,7 +74,10 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
-
+	display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+    grid-auto-rows: 100px; /* Rows are 100px tall, as per instrauctions */
+    gap: 20px; /*as per instructions*/
 }
 
 /* end Grid Part 1 */
@@ -90,11 +86,14 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-
+	grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    z-index: 1;
 }
 
 #grid-section2 .gridboxred {
-
+	grid-column: 1 / 3;
+    grid-row: 2 / 3;
 }
 
 /* end Grid Part 2 */
@@ -103,11 +102,11 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-
+	
 }
 
 #grid-section3 .box1 {
-
+	
 }
 
 #grid-section3 .box2 {
