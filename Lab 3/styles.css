@@ -17,6 +17,13 @@ body {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
 h2 {
     margin-bottom: 20px;
     color: #333;

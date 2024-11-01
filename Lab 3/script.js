@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let currency = currencySelect.value;
 
         if (isNaN(billTotal) || billTotal <= 0) {
-            error.textContent = "Please enter a valid, positive number.";
+            error.textContent = "Please enter a valid/positive number.";
             tipAmountInput.value = "";
             totalWithTipInput.value = "";
             return;
